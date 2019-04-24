@@ -8,7 +8,7 @@ Launch the Terminal and play around with it.
 Cheatsheet with all commands is located at:
 https://kubernetes.io/docs/reference/kubectl/cheatsheet
 
-Start an nginx container with:
+Start an nginx container with:</br>
 `kubectl run mywebapp --image=nginx --restart=Never`
 
 Generate a yaml file from a running pod with:
@@ -23,3 +23,5 @@ Run the deployment with:
 Create a namespace with:
 `kubectl create namespace *name*`
 
+Start an interactive session with a pod:
+`kubectl run --image=ubuntu -it abc -- /bin/bash`
