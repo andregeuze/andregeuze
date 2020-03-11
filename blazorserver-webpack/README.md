@@ -45,6 +45,8 @@
 - Create `.gitignore` file with this content:
 
   ```
+  bin/
+  obj/
   node_modules/
   wwwroot/
   publish/
@@ -57,7 +59,7 @@
 
 - Install NPM dev dependencies with this oneliner:
 
-  `npm i -D clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin style-loader webpack webpack-cli jquery popper.js`
+  `npm i -D clean-webpack-plugin css-loader html-webpack-plugin optimize-css-assets-webpack-plugin terser-webpack-plugin mini-css-extract-plugin style-loader webpack webpack-cli jquery popper.js`
 
 - Install npm dependencies with this oneliner:
 
@@ -69,7 +71,7 @@
   "scripts": {
     "release": "webpack --mode=production",
     "publish": "npm run release && dotnet publish -c Release -o publish",
-    "production": "npm run publish && cd publish && dotnet blazorserver-webpack.exe",
+    "production": "npm run publish && dotnet publish/blazorserver-webpack.dll",
     "start": "npm run release && dotnet run"
   },
   ```
@@ -82,7 +84,9 @@
   const path = require("path");
   const { CleanWebpackPlugin } = require("clean-webpack-plugin");
   const HtmlWebpackPlugin = require("html-webpack-plugin");
+  const TerserJSPlugin = require("terser-webpack-plugin");
   const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+  const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
   module.exports = {
     entry: "./Client/index.js",
     output: {
@@ -97,6 +101,9 @@
       rules: [
         { test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] }
       ]
+    },
+    optimization: {
+      minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
     },
     plugins: [
       new CleanWebpackPlugin(),
@@ -114,4 +121,8 @@
 
 ## Done!
 
-Run `npm start` and enjoy.
+Run:
+
+- `npm start` and enjoy testing locally
+- `npm run release` to build webpack only
+- `npm run production` to create a production build and run from the DLL

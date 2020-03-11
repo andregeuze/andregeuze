@@ -1,7 +1,9 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserJSPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
     entry: "./Client/index.js",
     output: {
@@ -16,6 +18,9 @@ module.exports = {
         rules: [
             { test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] }
         ]
+    },
+    optimization: {
+        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
     },
     plugins: [
         new CleanWebpackPlugin(),
