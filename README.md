@@ -1,2 +1,5 @@
-# Playground
-This repo contains projects for trying out stuff or PoC's
+# Index
+
+| Article                                                                                        | Length |
+| :--------------------------------------------------------------------------------------------- | :----: |
+| [Blazor Server and dependency management with NPM and Webpack](blazorserver-webpack/README.md) | 30 min |
