@@ -10,5 +10,10 @@
 @import "_bootswatch";
 @import "_syntax-highlighting";
 
+.navbar {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
 // Include all dependencies below
 @import "../node_modules/bootstrap/scss/bootstrap";
