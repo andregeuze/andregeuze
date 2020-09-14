@@ -1,0 +1,23 @@
+{
+  "name": "andregeuze.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to my GitHub Pages 😀",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andregeuze/andregeuze.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andregeuze/andregeuze.github.io/issues"
+  },
+  "homepage": "https://github.com/andregeuze/andregeuze.github.io#readme",
+  "devDependencies": {
+    "bootstrap": "^4.5.2",
+    "sass": "^1.26.10"
+  }
+}
