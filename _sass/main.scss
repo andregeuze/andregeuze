@@ -1,6 +1,7 @@
 // Include dependencies for custom style
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 /*!
 * André Geuze custom style
@@ -13,6 +14,3 @@
 body {
   padding-top: 100px;
 }
-
-// Include all dependencies below
-@import "../node_modules/bootstrap/scss/bootstrap";
