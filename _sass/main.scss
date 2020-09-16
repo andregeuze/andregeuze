@@ -1,13 +1,12 @@
-// Include dependencies for custom style
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/functions";
+@import "_variables";
+
+// Include dependencies
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 /*!
 * André Geuze custom style
 * Copyright © 2020 André Geuze
 */
-@import "_variables";
 @import "_bootswatch";
 @import "_syntax-highlighting";
 
