@@ -8,8 +8,8 @@ email: ""
 description: This repository contains all my tryout code
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
+twitter_username: andregeuze
+github_username: andregeuze
 
 repository: andregeuze/andregeuze.github.io
 

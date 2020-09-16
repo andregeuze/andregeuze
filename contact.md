@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact Me
+title: Contact
 ---
 
 Contact me through Twitter _[@andregeuze](https://twitter.com/andregeuze)_
