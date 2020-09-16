@@ -1,3 +1,3 @@
 # Contact
 
-Contact me through Twitter [@andregeuze](https://twitter.com/andregeuze)
+Contact me through Twitter _[@andregeuze](https://twitter.com/andregeuze)_
