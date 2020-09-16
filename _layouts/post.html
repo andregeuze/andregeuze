@@ -1,23 +1,26 @@
 ---
 layout: default
 ---
-<article>
 
+<article>
   <header>
-    <h1>{{ page.title | escape }}</h1>
-    <p class="text-muted">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        {%- assign date_format = "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • {{ page.author }}
+    <div class="jumbotron">
+      <h1 class="display-3">{{ page.title | escape }}</h1>
+      <p class="text-muted">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {%- assign date_format = "%b %-d, %Y" -%} {{ page.date | date:
+          date_format }}
+        </time>
+        {%- if page.author -%} • {{ page.author }} {%- endif -%}
+      </p>
+      {%- if page.lead -%}
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
       {%- endif -%}
-    </p>
+    </div>
   </header>
 
-  <section>
-    {{ content }}
-  </section>
-
+  <section>{{ content }}</section>
 </article>
