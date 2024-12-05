@@ -3,19 +3,22 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: André Geuze Github Pages
+title: Dré's Notebook
 email: ""
-description: This repository contains all my tryout code
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+author:
+  name: André Geuze
+  # email: your-email@domain.com
+
+description: This repository contains all my try-out code, random things I encountered during my many hobbies or other learnings from home automation and networking. Welcome to my personal notebook 😄👋
 twitter_username: andregeuze
 github_username: andregeuze
 
-repository: andregeuze/andregeuze.github.io
+repository: andregeuze/andregeuze
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 # A list of the pages to display in the navigation bar
