@@ -3,6 +3,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+# Ignore generated assets
+assets/css/tailwind.css
+
 node_modules/
 
 .DS_Store
