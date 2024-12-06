@@ -5,10 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "npx tailwindcss -i ./_styles/main.css -o ./assets/css/tailwind.css",
-    "watch": "npx tailwindcss -i ./_styles/main.css -o ./assets/css/tailwind.css --watch",
-    "dev": "npm install && npm run build && podman compose -f docker-compose.yml -f docker-compose.dev.yml up --build -w",
-    "prod": "npm install && npm run build && podman compose up --build"
+    "build": "npm install && npx tailwindcss -i ./_styles/main.css -o ./assets/css/tailwind.css",
+    "dev": "npm run build && podman compose -f docker-compose.yml -f docker-compose.dev.yml up --build",
+    "prod": "npm run build && podman compose up --build"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.0",

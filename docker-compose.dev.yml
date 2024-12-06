@@ -6,4 +6,4 @@ services:
       - "35729:35729" # For the livereload functionality
     volumes:
       - .:/app
-    command: bundle exec jekyll serve --livereload --host 0.0.0.0
+    command: bundle exec jekyll serve --force_polling --drafts --verbose --host 0.0.0.0

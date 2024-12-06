@@ -17,13 +17,14 @@ Before diving in, it’s essential to prepare:
 
 1. **Backup Configurations**: Always back up configuration files in case you need to roll back changes.
 1. **Check Cluster Health**: Use `pvecm status` to verify that the cluster is healthy and operating normally.
-1. **Define New IPs**:<br>
+1. **Define New IPs**:<br/>
    ```plaintext
    10.0.10.1        - Gateway
    255.255.255.0    - Netmask
    10.0.10.51       - TATOOINE (The main node)
    10.0.10.52       - VERUNA (second node)
    10.0.10.53       - NABOO (third node)
+   ```
 1. **Order of Updates**: Plan which node to update first to minimize disruptions.
 
 ## Making the Changes

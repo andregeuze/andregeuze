@@ -3,12 +3,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-
 node_modules/
 
 .DS_Store
 .obsidian
 Gemfile.lock
-
-# Ignore the generated tailwind.css
-assets/css/tailwind.css
