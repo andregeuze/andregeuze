@@ -4,7 +4,7 @@ title: Changing IP Addresses of Nodes in a Proxmox Cluster
 lead: How to safely change IP addresses of your Nodes in a running Proxmox cluster without breaking it.
 author: André Geuze
 categories: homeautomation
-tags: ["proxmox", "cluster", "ipaddress", "corosync", "networking", "automation"]
+tags: proxmox cluster corosync networking automation
 ---
 
 ## Introduction

@@ -1,0 +1,9 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000" # For the Jekyll server
+      - "35729:35729" # For the livereload functionality
+    volumes:
+      - .:/app
+    command: bundle exec jekyll serve --livereload --host 0.0.0.0
