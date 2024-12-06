@@ -1,31 +1,50 @@
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# change the followings to match your Github username and repo name
+baseurl: "/" # the name of your github repo
+url: "https://blog.geuze.dev" # the url of your github pages
+
+# site information used in page title, meta data etc.
 title: Dré's Notebook
-email: ""
-author:
-  name: André Geuze
-  # email: your-email@domain.com
-
 description: This repository contains all my try-out code, random things I encountered during my many hobbies or other learnings from home automation and networking. Welcome to my personal notebook 😄👋
-twitter_username: andregeuze
-github_username: andregeuze
 
-repository: andregeuze/andregeuze
+# color theme for links
+theme-color: indigo # indigo|yellow|pink|green|stone|
 
-# Build settings
+# homepage information
+author: André Geuze
+author-bio: Cloud-native Software Developer  # change to false to hide
+author-image: 279.png  # file must be in the /assets/img/ folder
+
+# navigation menu
+show-nav-menu: true
+
+nav-menu:
+- text: About
+  permalink: about
+- text: Blog
+  permalink: blog
+
+# use false to turn off any social media links
+github: https://github.com/andregeuze
+linkedin: https://www.linkedin.com/in/andregeuze
+instagram: https://www.instagram.com/dre.unleashed
+twitter: false
+facebook: false
+medium: false
+google-scholar: false
+email: false
+
+# footer information
+footer-msg: "Powered by Tailpages"
+footer-msg-link: https://github.com/harrywang/tailpages
+
+# google analytics
+# google-analytics: G-WCRC1TC2V5
+
+# jekyll plugins - no need to change
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# A list of the pages to display in the navigation bar
-header_pages:
-  - index.md
-  - about.md
-  - contact.md
+    # - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

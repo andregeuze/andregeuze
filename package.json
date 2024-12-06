@@ -1,24 +1,17 @@
 {
-  "name": "andregeuze.github.io",
+  "name": "blog.geuze.dev",
   "version": "1.0.0",
   "description": "Dré's Notebook",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass --style=compressed --no-charset --no-source-map _sass/main.scss assets/main.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andregeuze/andregeuze.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andregeuze/andregeuze/issues"
-  },
-  "homepage": "https://github.com/andregeuze/andregeuze#readme",
+  "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.5.2",
-    "sass": "^1.26.10"
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.12"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.1"
   }
 }
