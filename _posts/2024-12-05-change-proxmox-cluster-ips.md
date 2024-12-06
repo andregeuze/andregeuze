@@ -4,7 +4,7 @@ title: Changing IP Addresses of Nodes in a Proxmox Cluster
 lead: How to safely change IP addresses of your Nodes in a running Proxmox cluster without breaking it.
 author: André Geuze
 categories: homeautomation
-tags: proxmox cluster nodes ip corosync networking automation
+tags: ["proxmox", "cluster", "ipaddress", "corosync", "networking", "automation"]
 ---
 
 ## Introduction
@@ -17,7 +17,7 @@ Before diving in, it’s essential to prepare:
 
 1. **Backup Configurations**: Always back up configuration files in case you need to roll back changes.
 1. **Check Cluster Health**: Use `pvecm status` to verify that the cluster is healthy and operating normally.
-1. **Define New IPs**:
+1. **Define New IPs**:<br>
    ```plaintext
    10.0.10.1        - Gateway
    255.255.255.0    - Netmask
